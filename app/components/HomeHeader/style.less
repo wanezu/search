@@ -1,35 +1,107 @@
-#home-header {
-    background-color: rgb(233, 32, 61);
-    padding: 10px;
+.search-header {
+  height: 50px;
+  background: #dde9f9;
+  line-height: 50px;
+  border: 0;
+  padding: 0 0 0 40px;
 
-    * {
-        color: #fff;
-        font-size: 16px;
-        line-height: 1;
+  .search-old {
+    float: left;
+
+
+    .btn-icon {
+      background-image: data-uri("../../static/images/newTop.png");
     }
-}
-.home-header-left {
-    width: 60px;
-    text-align: left;
-    margin: 5px 0;
-}
-.home-header-middle {
-    width: auto;
-    margin: 0 30px 0 60px;
 
-    .search-container {
-        background-color: #fff;
-        border-radius: 15px;
-        overflow: hidden;
-        padding: 5px;
+    .search-old-back {
+      background-position: 0 -4px;
+      width: 12px;
+      height: 12px;
+      margin-right: 9px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+    }
 
-        i {
-            color: #ccc !important;
+    .search-old-text {
+      color: #1b82d3;
+    }
+  }
+
+  .search-item {
+    float: right;
+
+    .search-login-register {
+      padding: 0 20px 0 0;
+      text-align: center;
+      margin: 0 5px 0 0;
+      width: 90px;
+      float: left;
+
+      .search-login {
+        float: left;
+      }
+
+      .search-register {
+        float: right;
+      }
+    }
+
+    .more-menu-link {
+      float: right;
+      margin: 0 40px 0 15px;
+
+      .more-menu-show {
+        a:hover {
+          color: #000;
         }
+      }
+
+      .more-menu-list {
+        position: absolute;
+        right: 20px;
+        top: 46px;
+        width: 112px;
+        background-color: #fff;
+        box-shadow: 2px 3px 3px 3px rgba(24,24,24,0.15);
+        z-index: 10;
+        cursor: pointer;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        text-align: center;
+        opacity: 1;
+        line-height: 30px;
+
+        .btn-icon {
+          background-image: data-uri("../../static/images/newTop.png");
+        }
+
+        .more-menu-show.more-menu-png {
+          width: 14px;
+          height: 14px;
+          background-position: -50px -4px;
+          display: inline-block;
+          line-height: 0;
+          font-size: 0;
+        }
+
+        a {
+          display: block;
+          padding: 6px 20px;
+          text-align: left;
+          -webkit-transition: none .25s;
+          -moz-transition: none .25s;
+          transition: none .25s;
+        }
+
+        a:hover {
+          background: #dde9f9;
+        }
+      }
+
+
     }
-}
-.home-header-right {
-    width: 30px;
-    margin: 5px 0;
-    text-align: right;
+
+  }
+
 }

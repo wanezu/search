@@ -13,24 +13,58 @@ class HomeHeader extends React.Component {
     }
     render() {
         return (
-            <div id="home-header" className="clear-fix">
-                <div className="home-header-left float-left">
-                    <Link to="/city">
-                        <span>{this.props.cityName}</span>
-                        &nbsp;
-                        <i className="icon-angle-down"></i>
-                    </Link>
+            <div id="topbarConRobot" className="search-header">
+                <div className="search-old">
+                    <a href="">
+                        <span className="btn-icon search-old-back"></span>
+                        <span className="search-old-text">切到旧版首页</span>
+                    </a>
                 </div>
-                <div className="home-header-right float-right">
-                    <Link to="/Login">
-                        <i className="icon-user"></i>
-                    </Link>
-                </div>
-                <div className="home-header-middle">
-                    <div className="search-container">
-                        <i className="icon-search"></i>
-                        &nbsp;
-                        <SearchInput value="" enterHandle={this.enterHandle.bind(this)}/>
+                <div className="search-item">
+                    <div className="search-login-register">
+                        <span className="search-login">登录</span>
+                        <span className="search-register">注册</span>
+                    </div>
+                    <div className="more-menu-link">
+                        <div className="more-menu-show">
+                            <a href="">
+                                <span className="btn-icon more-menu-png"></span>
+                                <span className="btn-word">更多产品</span>
+                            </a>
+                        </div>
+                        <div className="more-menu-list">
+                            <span className="ico-san"></span>
+                            <a href="">
+                                <div className="index">
+                                    <span className="btn-icon znxg-link"></span>
+                                    <span className="znxg-text">智能选股</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div className="index">
+                                    <span className="btn-icon znxg-link"></span>
+                                    <span className="znxg-text">智能选股</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div className="index">
+                                    <span className="btn-icon znxg-link"></span>
+                                    <span className="znxg-text">智能选股</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div className="index">
+                                    <span className="btn-icon znxg-link"></span>
+                                    <span className="znxg-text">智能选股</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div className="index">
+                                    <span className="btn-icon znxg-link"></span>
+                                    <span className="znxg-text">智能选股</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
